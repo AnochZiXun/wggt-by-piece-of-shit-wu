@@ -1,0 +1,13 @@
+@import url(layout.css); /*布局*/
+/*Login*/
+#login{position:absolute;top:94px;left:40%;z-index:10;}
+#login li{height:34px;}
+.inputWord{display:inline-block;width:82px;text-align:right;font-size:14px;vertical-align:text-bottom;}
+.inputBar{width:146px;height:24px;display:inline-block;background:url(../images/inputbar.png) no-repeat;}
+.input{width:136px;height:16px;margin:4px;line-height:16px;border:0px;}
+.select{background:url(../images/selectbar.png) no-repeat;width:146px;height:24px;display:inline-block;border:none;text-align:left;padding-left:10px;line-height:24px;}
+#selectBar{display:block;margin-left:82px;width:145px;background:url(../images/option_bg.gif) repeat-y;border-bottom:2px solid #c5c5c5;display:none;margin-top:-5px;padding-top:8px;}
+#selectBar a{display:block;height:24px;line-height:24px;padding-left:10px;margin-left:2px;margin-right:1px;cursor:pointer;}
+#selectBar a:hover{background:#000000;color:#ffffff;text-decoration:none}
+#loginMenu{position:absolute;top:208px;left:45%;z-index:1;}
+#loginMenu .menu{float:left;margin-left:8px;cursor:pointer;}

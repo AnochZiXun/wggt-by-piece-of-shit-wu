@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META charset="UTF-8">
+		<META name="viewport" content="width=device-width, initial-scale=1.0">
+		<TITLE>MFG-MDM</TITLE>
+		<LINK rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<LINK rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<!--<LINK rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css">-->
+		<STYLE>
+			TABLE.table.table-bordered.table-sm > TBODY > TR > TH.bg-success[scope='row'] {
+				cursor: default;
+				font-size: .875rem;
+				text-align: right;
+			}
+
+			LABEL.must::before {
+				color: #F00;
+				content: '*';
+				cursor: help;
+			}
+
+			A.card-link[data-toggle='collapse'] {
+				display: block;
+			}
+		</STYLE>
+		<!--<SCRIPT src="https://use.fontawesome.com/48eb24a104.js"></SCRIPT>-->
+		<SCRIPT src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></SCRIPT>
+		<SCRIPT src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></SCRIPT>
+		<!--<SCRIPT src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></SCRIPT>-->
+		<SCRIPT src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></SCRIPT>
+		<SCRIPT src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></SCRIPT>
+		<SCRIPT src="SCRIPT/web3.min.js"></SCRIPT>
+		<SCRIPT src="SCRIPT/ethereumjs-all.min.js"></SCRIPT>
+		<SCRIPT src="index.js"></SCRIPT>
+	</HEAD>
+	<BODY>
+		<DIV class="container body-content">
+			<BR>
+
+			<UL class="nav nav-tabs">
+				<LI class="nav-item">
+					<A class="nav-link active" href="#accountz" data-toggle="tab">產生帳號</A>
+				</LI>
+				<LI class="nav-item">
+					<A class="nav-link" href="#balancez" data-toggle="tab">查詢餘額</A>
+				</LI>
+				<LI class="nav-item">
+					<A class="nav-link" href="#transactionz" data-toggle="tab">轉帳交易</A>
+				</LI>
+			</UL>
+
+			<DIV class="tab-content">
+				<DIV id="accountz" class="tab-pane container active">
+					<BR>
+					<DIV class="accordion">
+						<DIV class="card">
+							<DIV class="card-header">
+								<A class="card-link" href="#account1" data-toggle="collapse">預設</A>
+							</DIV>
+							<DIV class="collapse" id="account1">
+								<DIV class="card-body">
+									<FORM id="web3EthAccountsCreate1">
+										<DIV class="form-group">
+											<BUTTON class="btn btn-primary fas fa-check-circle" title="產生帳號" type="submit" data-placement="right" data-toggle="tooltip">&#160;</BUTTON>
+										</DIV>
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate1Address">address</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate1Address" readonly="" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate1PrivateKey">privateKey</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate1PrivateKey" readonly="" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+									</FORM>
+								</DIV>
+							</DIV>
+						</DIV>
+
+						<DIV class="card">
+							<DIV class="card-header">
+								<A class="card-link" href="#account2" data-toggle="collapse">安全</A>
+							</DIV>
+							<DIV class="collapse" id="account2">
+								<DIV class="card-body">
+									<FORM id="web3EthAccountsCreate2">
+										<DIV class="form-group">
+											<BUTTON class="btn btn-primary fas fa-check-circle" title="產生帳號" type="submit" data-placement="right" data-toggle="tooltip">&#160;</BUTTON>
+										</DIV>
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate2Address">address</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate2Address" readonly="" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate2PrivateKey">privateKey</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate2PrivateKey" readonly="" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+									</FORM>
+								</DIV>
+							</DIV>
+						</DIV>
+
+						<DIV class="card">
+							<DIV class="card-header">
+								<A class="card-link" href="#account3" data-toggle="collapse">以 private key 滙入帳號</A>
+							</DIV>
+							<DIV class="collapse" id="account3">
+								<DIV class="card-body">
+									<FORM id="web3EthAccountsCreate3">
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate3PrivateKey">private key</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate3PrivateKey" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+										<DIV class="form-group">
+											<BUTTON class="btn btn-primary fas fa-check-circle" title="滙入帳號" type="submit" data-placement="right" data-toggle="tooltip">&#160;</BUTTON>
+										</DIV>
+										<DIV class="form-group">
+											<LABEL for="web3EthAccountsCreate3Address">address</LABEL>
+											<DIV class="input-group">
+												<INPUT class="form-control form-control-sm" id="web3EthAccountsCreate3Address" readonly="" type="text">
+												<DIV class="input-group-append">
+													<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+												</DIV>
+											</DIV>
+										</DIV>
+									</FORM>
+								</DIV>
+							</DIV>
+						</DIV>
+					</DIV>
+				</DIV>
+
+				<DIV id="balancez" class="tab-pane container fade">
+					<BR>
+					<FORM id="web3EthGetBalance">
+						<DIV class="form-group">
+							<LABEL for="web3EthGetBalanceAddress">address</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthGetBalanceAddress" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+						<DIV class="form-group">
+							<BUTTON class="btn btn-primary fas fa-check-circle" title="查詢餘額" type="submit" data-placement="right" data-toggle="tooltip">&#160;</BUTTON>
+						</DIV>
+						<DIV class="form-group">
+							<LABEL for="web3EthGetBalanceEther">Ether</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthGetBalanceEther" readonly="" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+						<DIV class="form-group">
+							<LABEL for="web3EthGetBalanceWindGreenGainCoin">WGGC</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthGetBalanceWindGreenGainCoin" readonly="" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+					</FORM>
+				</DIV>
+
+				<DIV id="transactionz" class="tab-pane container">
+					<BR>
+					<FORM id="web3EthSendSignedTransaction">
+						<DIV class="form-group">
+							<LABEL for="web3EthSendSignedTransactionAddress">address</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthSendSignedTransactionAddress" required="" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+						<DIV class="form-group">
+							<LABEL for="web3EthSendSignedTransactionPrivateKey">privateKey</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthSendSignedTransactionPrivateKey" required="" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+						<DIV class="form-group">
+							<LABEL for="web3EthSendSignedTransactionWithdrawAmount">amount</LABEL>
+							<DIV class="input-group">
+								<INPUT class="form-control form-control-sm" id="web3EthSendSignedTransactionWithdrawAmount" required="" type="text">
+								<DIV class="input-group-append">
+									<BUTTON class="border border-success btn fas fa-copy" title="複製" type="button" data-placement="left" data-toggle="tooltip">&#160;</BUTTON>
+								</DIV>
+							</DIV>
+						</DIV>
+						<DIV class="form-group">
+							<BUTTON class="btn btn-primary fas fa-check-circle" title="以太幣換代幣" type="submit" data-placement="right" data-toggle="tooltip">&#160;</BUTTON>
+						</DIV>
+					</FORM>
+				</DIV>
+			</DIV>
+			<HR>
+			<FOOTER>
+				<P>&copy; 2018 - Wind Green Gain Coin</P>
+			</FOOTER>
+		</DIV>
+	</BODY>
+</HTML>

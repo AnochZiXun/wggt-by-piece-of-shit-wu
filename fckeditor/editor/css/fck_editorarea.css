@@ -1,0 +1,87 @@
+/*
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the default CSS file used by the editor area. It defines the
+ * initial font of the editor and background color.
+ *
+ * A user can configure the editor to use another CSS file. Just change
+ * the value of the FCKConfig.EditorAreaCSS key in the configuration
+ * file.
+ */
+
+/**
+ * The "body" styles should match your editor web site, mainly regarding
+ * background color and font family and size.
+ */
+@charset "utf-8";
+/*取消 Html 原有樣式---------------------------------*/
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;line-height:1.5;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ol,ul{list-style:none;margin:0;padding:0;}
+hr{margin:0px;}
+img{max-width:100%;height:auto;}
+div,p,span{line-height:1.5;}
+/*基本------------------------------------------*/
+html { overflow:-moz-scrollbars-vertical; overflow-y:scroll;z-index: 999;font-size:14px;}
+body{font-family: Arila, "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;color:#000;-webkit-text-size-adjust:none;}
+a,a:hover,a:focus{text-decoration:none;}
+body
+{
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+}
+
+body, td
+{
+	font-size: 14px;
+}
+
+a[href]
+{
+	color: -moz-hyperlinktext !important;		/* For Firefox... mark as important, otherwise it becomes black */
+	text-decoration: -moz-anchor-decoration;	/* For Firefox 3, otherwise no underline will be used */
+}
+
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Title
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #cc3300;
+}
+
+.Code
+{
+	border: #8b4513 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #000066;
+	font-family: 'Courier New' , Monospace;
+	background-color: #ff9933;
+}

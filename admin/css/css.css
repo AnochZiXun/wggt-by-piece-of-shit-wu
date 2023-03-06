@@ -1,0 +1,108 @@
+@import url(layout.css); /*布局*/
+/*AjaxLoad*/
+#ajaxload{position:absolute;left:50%;top:50%;display:none;}
+/*表單控制項*/
+.inputWord{display:inline-block;width:82px;text-align:right;font-size:14px;vertical-align:text-bottom;}
+.inputBar{position:absolute;top:4px;left:0px;width:146px;height:24px;background:url(../images/inputbar.png) no-repeat;}
+.input{width:136px;height:16px;margin:4px;line-height:16px;border:0px;}
+.select{background:url(../images/selectbar.png) no-repeat;width:146px;height:24px;display:inline-block;border:none;text-align:left;padding-left:10px;line-height:24px;}
+#selectBar{position:absolute;top:33px;left:82px;width:145px;background:url(../images/option_bg1.gif) repeat-y;border-bottom:2px solid #c5c5c5;display:none;margin-top:-13px;padding-top:8px;}
+#selectBar a{display:block;height:24px;line-height:24px;padding-left:10px;margin-left:2px;margin-right:1px;}
+#selectBar a:hover{background:#000000;color:#ffffff;text-decoration:none}
+.submit{position:absolute;top:0px;right:0px;}
+
+/*Header*/
+#language{position:absolute;top:7px;right:4px;z-index:11;width:280px;}
+.langzone{position:absolute;top:6px;left:0px;width:228px;}
+#logout{position:absolute;top:7px;right:295px;width:280px;}
+.logoutzone{position:absolute;top:10px;left:0px;width:228px;text-align:right;}
+#pagenav{position:absolute;top:0px;left:10px;width:90%;}
+#pagenav li{display:inline;margin-right:2%;}
+#search{position:absolute;width:500px;right:4%;top:95px;z-index:10;[;top:91px;]*top:95px;_top:89px;}
+#search li{display:inline;margin-right:2px;float:right;color:#ffffff;[;margin-top:6px;]*margin-top:0px;_margin-top:6px;}
+#search img{margin-top:0px;[;margin-top:0px;]*margin-top:1px;_margin-top:1px;}
+#cateSearch{position:absolute;top:131px;left:40%;}
+#cateSearch li{display:inline;}
+
+/*FirstPage*/
+#showAllZone{width:90%;margin-top:25px;margin-left:20px;}
+.mainDescription{width:90%;float:left;}
+#showAllZone h2{font-size:16px;color:#4a4a4a;width:90%;border-bottom:1px solid #d9dee7;height:20px;}
+.zoneIcon{width:110px;height:120px;float:left;text-align:center;padding-bottom:15px;margin-right:10px;overflow:hidden;}
+.zoneIcon a{cursor:pointer;}
+.zonePathIcon{width:110px;height:120px;float:left;text-align:center;padding-bottom:15px;margin-right:10px;overflow:hidden;}
+.zonePathIcon a{cursor:pointer;}
+#showAllZone a{color:#4a4a4a;}
+.zoneIconWord{width:120px;line-height:18px;}
+/*Menu*/
+#mainMenu{position:relative;float:left;width:15%;background:#d9dee7;}
+#menuStart{float:left;width:96%;margin-top:24px;margin-left:4%;_margin-left:4px;overflow-x:hidden;overflow-y:auto;}
+#menuStart h2{float:left;font-weight:normal;}
+#menuStart img{float:left;width:15px;height:15px;margin-top:4px;*margin-top:2px;margin-right:4px;}
+#menuStart ul{margin-left:13px;display:none;}
+#menuStart li{line-height:24px;clear:both;cursor:pointer;}
+#menuStart li a{color:#4f8ad1;width:100%;}
+
+/*Content*/
+#mainContent{float:left;width:85%;overflow:hidden;}
+#category{float:left;margin-left:7px;margin-top:10px;_display:inline;text-align:center;height:100px;overflow-x:hidden;overflow-y:auto;width:95%;height:90%;}
+#category h1{float:left;font-weight:normal;margin-right:2px;margin-right:10px;}
+#category h2{float:left;font-weight:normal;margin-right:2px;cursor:pointer;margin-right:10px;}
+#category img{float:left;width:15px;height:15px;margin-top:7px;*margin-top:-1px;margin-right:6px;cursor:pointer;}
+#category ul li{margin-top:10px;margin-left:19px;line-height:26px;*line-height:16px;}
+#category span{display:block;clear:both;_float:left;}
+/*#categoryList ul{display:none;}*/
+#controlMenu{float:left;margin-left:7px;margin-top:10px;width:95%;_display:inline;}
+#controlMenu .selectall{float:left;margin-top:2px;*margin-top:0px;margin-left:1%;width:29%;}
+#controlMenu .selectall input{float:left;margin-top:2px;margin-right:4px;*margin:0px;}
+#controlMenu .word{float:left;margin-left:4px;*margin:4px;}
+#methodMenu{float:right;width:30%;text-align:right;margin-right:12px;}
+#methodMenu img{margin-left:10px;}
+#dataList{float:left;margin-top:7px;margin-left:7px;_margin-left:4px;width:95%;}
+#listTopic{float:left;background:#e5e9f0;margin-bottom:1px;min-height:25px;_height:25px;width:100%;padding-top:4px;color:#4f8ad1;}
+#dataList .tc1{float:left;width:5%;margin-left:1%;margin-top:4px;*margin-top:0px;}
+#dataList .tc2{float:left;width:5%;text-align:left;}
+#dataList .tc3{float:left;width:8%;text-align:center;}
+#listTopic .topicShowZone{float:left;width:65%;text-align:left;line-height:25px;}
+#listTopic .tc4{float:right;width:15%;text-align:right;margin-right:1%;}
+.odd{float:left;background:#d9dee7;margin-bottom:1px;min-height:25px;_height:25px;width:100%;padding-top:4px;}
+.even{float:left;background:#e5e9f0;margin-bottom:1px;min-height:25px;_height:25px;width:100%;padding-top:4px;}
+
+
+#dataList .checkbox{float:left;width:3%;margin-left:1%;margin-top:4px;*margin-top:0px;}
+#dataList .sort{float:left;width:4%;text-align:left;}
+#dataList .img{float:left;width:7%;text-align:center;}
+
+#dataList .menuZone{float:right;width:15%;text-align:right;margin-right:1%;}
+#dataList .menuZone img{margin-left:10px;}
+
+.columnShow{float:left;color:#000000;width:65%;}
+.columnShow p{float:left;}
+.columnShow p input{float:left;margin-top:2px;margin-right:4px;*margin:0px;}
+.columnShow p font{float:left;margin-top:1px;*margin-top:5px;margin-right:4px;font-size:15px;}
+
+/*Page*/
+#page{width:95%;float:left;text-align:right;}
+#page a{cursor:pointer;}
+
+/*ColumnStatus*/
+#columnList{float:left;margin-top:20px;margin-left:7px;_margin-left:4px;width:99%;}
+.columnTopic{float:left;width:17%;text-align:right;padding-bottom:10px;*padding-top:3px;}
+.column{float:left;padding-left:1%;padding-bottom:10px;vertical-align:middle;*vertical-align:bottom;width:82%;}
+.column .fontweight{float:left;margin-right:10px;}
+.labelselect{margin-right:5px;}
+/*
+.muchbox{float:left;width:100px;height:40px;}
+.muchbox input{float:left;margin-top:2px;margin-right:4px;*margin:0px;}
+.muchbox p{float:left;*margin-top:4px;width:80px;}
+*/
+.muchbox{float:left;/*width:160px;*/height:40px;padding-right:20px;}
+.muchbox input{float:left;margin-top:2px;margin-right:4px;*margin:0px;}
+.muchbox p{float:left;*margin-top:4px;/*width:140px;*/}
+
+
+.muchFile{float:left;width:100px;height:100px;padding-bottom:5px;}
+.muchFile img{max-width:80px;height:auto;max-height:80px;width:auto;_width:80px;_height:80px;}
+#submitform{cursor:pointer;}
+#datacategoryZone{margin-top:-10px;}
+#datacategoryZone div{margin-bottom:10px;*margin-top:2px;}
